@@ -37,9 +37,9 @@ app.post('/contact_us',async (req,res)=>{
         console.log("Email sent: " + info.response);
       }
     });
-    return res.redirect("/");
+    return res.json({"hel": "hi"});
 })
-app.get('/',(req,res)=> res.json({"hel": "hi"}))
+// app.get('/',(req,res)=> res.json({"hel": "hi"}))
 app.listen(port, () => {
   console.log(`Your port is ${port}`);});
 
