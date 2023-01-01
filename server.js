@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(cors({ origin: '*'}));
 app.post('/contact_us',async (req,res)=>{
-  console.log()
+  console.log(req.data)
     const { name, email, message } = req.body.contacts;
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
