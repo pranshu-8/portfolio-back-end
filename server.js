@@ -23,7 +23,7 @@ app.post('/contact_us',async (req,res)=>{
     // send mail with defined transport object
     var mailOptions = {
       from: process.env.EMAIL_ID,
-      to: ["20cs3077@rgipt.ac.in, pranshu05012002@gmail.com,pranshutewari8@gmail.com"],
+      to: ["20cs3077@rgipt.ac.in"],
       subject: "Portfolio Email",
       html: `<p>Name of sender: ${name}</p>
       <p>Email id of sender: ${email}</p>
